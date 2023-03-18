@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --secondaryBackgroundClr: #0a173e;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+main {
+  height: 100%;
+  position: relative;
+}
+
+main .bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+main .bg img {
+  width: 120%;
+  height: 100%;
+  transform: scaleX(-1);
+  object-fit: cover;
+  object-position: 0 74%;
+  position: relative;
+  z-index: -1;
+}
+
+/* main .bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/hero-bg.jpg");
+  background-position: 100% 74%;
+  background-size: 120%;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+  z-index: -2;
+} */
+
+main .bg::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(100.56deg, #000 55%, rgba(0, 0, 0, 0) 70%);
+  opacity: 0.7;
+  z-index: -1;
+  pointer-events: none;
+}
+
+main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+main .title {
+  color: white;
+  margin-left: 8rem;
+}
+
+main .title h1 {
+  font-family: "Montserrat Subrayada", sans-serif;
+  font-size: 8rem;
+  margin: 0.8rem 0;
+}
+
+main .title h3 {
+  font-size: 3rem;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+main .title p strong {
+  font-weight: 600;
+}
+
+main .title p {
+  font-size: 3rem;
+  opacity: 0.9;
+}
+
+#events {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #000;
+  padding-left: 5rem;
+  position: relative;
+}
+
+#events::before {
+  content: "";
+  position: absolute;
+  top: -4rem;
+  height: 4rem;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black);
+}
+
+#events .card {
+  border-radius: 20px;
+  top: -4rem;
+  height: 512px;
+  width: 384px;
+  overflow: hidden;
+  background-color: #042a52;
+  position: relative;
+  cursor: pointer;
+}
+
+#events .card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: linear-gradient(
+    180deg,
+    rgba(218, 57, 43, 0),
+    var(--secondaryBackgroundClr)
+  );
+  opacity: 1;
+  transition: 0.4s ease-in-out;
+}
+
+#events .card:hover:after {
+  opacity: 0;
+}
+
+.card img {
+  height: 100%;
+  width: 100%;
+  transition: 0.4s ease-in-out;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.card .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  z-index: 10;
+  transition: 0.3s ease-in-out;
+  padding: 2.5rem 1rem;
+}
+
+.card .overlay h3 {
+  font-size: 2rem;
+}
+
+.card .overlay b {
+  font-weight: 500;
+}
+
+.card:hover .overlay {
+  opacity: 0;
+}
+
+.card:last-child {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+.card:last-child div {
+  z-index: 10;
+  transition: 0.4s ease-in-out;
+}
+
+.card:last-child:hover div {
+  scale: 1.1;
+}
+
+/************* PAST EVENTS ****************/
+#past {
+  width: 100%;
+  padding: 50px 15px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  --btns: white;
+  --secondaryText: gray;
+  --primaryText: white;
+}
+
+#past h1 {
+  color: var(--primaryText);
+  margin-bottom: 5rem;
+  font-size: 3rem;
+}
+.timeline-items {
+  max-width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.timeline-items::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: var(--btns);
+  left: calc(50%);
+}
+
+.timeline-card {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+.timeline-card:nth-child(odd) {
+  padding-right: calc(50% + 1rem);
+  text-align: right;
+}
+.timeline-card:nth-child(even) {
+  padding-left: calc(50% + 1rem);
+  text-align: left;
+}
+.card-dot {
+  height: 16px;
+  width: 16px;
+  background-color: var(--btns);
+  position: absolute;
+  left: calc(50% - 8px);
+  border-radius: 50%;
+  top: 10px;
+  cursor: pointer;
+}
+.card-dot:hover {
+  background-color: var(--secondaryText);
+}
+.card-date {
+  font-size: 1.5rem;
+  color: var(--secondaryText);
+  margin: 6px 0 15px;
+}
+.card-content {
+  background-color: var(--secondaryBackgroundClr);
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: text;
+}
+.card-content h3 {
+  font-size: 1.2rem;
+  letter-spacing: 0.01rem;
+  color: var(--primaryText);
+  margin: 0 0 10px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  color: var(--secondaryText);
+  font-weight: 300;
+  line-height: 1.25rem;
+  letter-spacing: 0.01rem;
+}
+
+.timespan {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primaryText) !important;
+}
+
+.timespan .iconify {
+  margin-right: 0.7rem;
+  margin-left: 0px;
+}
