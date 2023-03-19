@@ -208,7 +208,14 @@ main .title p {
 #past {
   width: 100%;
   padding: 50px 15px;
-  background-color: #000;
+  /* background: linear-gradient(100.56deg, #000 70%, #042a52 55%); */
+  background-color: hsla(0, 0%, 0%, 1);
+  background-image: radial-gradient(
+      at 0% 0%,
+      hsla(0, 0%, 12%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 81% 67%, hsla(235, 100%, 10%, 1) 0px, transparent 50%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -237,6 +244,13 @@ main .title p {
   height: 100%;
   background-color: var(--btns);
   left: calc(50%);
+  background: rgb(255, 101, 101);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 101, 101, 1) 0%,
+    rgba(193, 226, 133, 1) 50%,
+    rgba(139, 159, 255, 1) 100%
+  );
 }
 
 .timeline-card {
@@ -271,7 +285,12 @@ main .title p {
   margin: 6px 0 15px;
 }
 .card-content {
-  background-color: var(--secondaryBackgroundClr);
+  /* background-color: var(--secondaryBackgroundClr); */
+  backdrop-filter: blur(16px) saturate(200%);
+  -webkit-backdrop-filter: blur(16px) saturate(200%);
+  background-color: rgba(17, 25, 40, 0.7);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
   padding: 1rem;
   border-radius: 5px;
   cursor: text;
