@@ -167,3 +167,30 @@ var material = new THREE.PointsMaterial({ color: 0xf2d79f }); // Only for Codepe
   render();
 }
 particleEffect();
+
+document.addEventListener("DOMContentLoaded", () =>
+  requestAnimationFrame(updateTime)
+);
+
+function updateTime() {
+  const currDate = new Date();
+  const eventDate = new Date("2023-04-25");
+  const seconds = Math.round(eventDate.getTime() - currDate.getTime()) / 1000;
+  const days = Math.round(seconds / (60 * 60 * 24));
+  const hours = Math.round((seconds - days * 60 * 60 * 24) / (60 * 60));
+  const mins = Math.round(seconds / (60 * 60 * 24 * days * hours));
+  const secs = Math.round(seconds / (60 * 60 * 24 * days * hours * mins));
+
+  // console.log(seconds);
+  document.documentElement.style.setProperty("--timer-day", "'" + days + "'");
+  document.documentElement.style.setProperty("--timer-hours", "'" + mins + "'");
+  document.documentElement.style.setProperty(
+    "--timer-minutes",
+    "'" + mins + "'"
+  );
+  document.documentElement.style.setProperty(
+    "--timer-seconds",
+    "'" + secs + "'"
+  );
+  requestAnimationFrame(updateTime);
+}
