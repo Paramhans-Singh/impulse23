@@ -94,7 +94,7 @@ main .title {
 
 main .title h1 {
   font-family: "Montserrat Subrayada", sans-serif;
-  font-size: 8rem;
+  font-size: 6rem;
   margin: 0.8rem 0;
 }
 
@@ -109,7 +109,7 @@ main .title p strong {
 }
 
 main .title p {
-  font-size: 3rem;
+  font-size: 2.3rem;
   opacity: 0.9;
 }
 
@@ -149,7 +149,7 @@ main .title p {
   border-radius: 20px;
   top: -4rem;
   height: 512px;
-  width: 384px;
+  width: 340px;
   overflow: hidden;
   background-color: #042a52;
   position: relative;
@@ -240,7 +240,7 @@ main .title p {
   width: 100%;
   padding: 100px 15px;
   /* background-image: url("../assets/images/pic1.jpg"); */
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../assets/images/pic1.jpg);
   background-attachment: fixed;
   background-size: 110%;
