@@ -94,7 +94,7 @@ main .title {
 
 main .title h1 {
   font-family: "Montserrat Subrayada", sans-serif;
-  font-size: 8rem;
+  font-size: 6rem;
   margin: 0.8rem 0;
 }
 
@@ -109,7 +109,7 @@ main .title p strong {
 }
 
 main .title p {
-  font-size: 3rem;
+  font-size: 2.3rem;
   opacity: 0.9;
 }
 
