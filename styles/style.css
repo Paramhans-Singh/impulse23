@@ -235,7 +235,8 @@ main .title p {
   height: 512px;
   width: 340px;
   overflow: hidden;
-  background-color: #042a52;
+  /* background-color: #042a52; */
+  background-color:#990038;
   position: relative;
   cursor: pointer;
   box-shadow: 0px 0px 132px -100px rgba(33, 110, 205, 0.75);
@@ -243,7 +244,8 @@ main .title p {
 }
 
 #events .card:hover {
-  box-shadow: 0px 0px 132px 10px rgba(33, 110, 205, 0.75);
+  /* box-shadow: 0px 0px 132px 10px rgba(33, 110, 205, 0.75); */
+  box-shadow: 0px 0px 132px 10px #990038;
 }
 
 #events .card::after {
@@ -298,9 +300,9 @@ main .title p {
   box-shadow: 0px 0px 132px 10px rgba(113, 45, 253, 1);
 }
 
-/* #events .card:hover:after {
+#events .card:hover:after {
   opacity: 0;
-} */
+}
 
 .card img {
   height: 100%;
@@ -331,9 +333,9 @@ main .title p {
   font-weight: 500;
 }
 
-/* .card:hover .overlay {
+.card:hover .overlay {
   opacity: 0;
-} */
+}
 
 .card:last-child {
   color: white;
