@@ -27,6 +27,11 @@ body::before {
   z-index: -10;
 }
 
+header
+{
+  display: flex;
+}
+
 header h1 {
   position: fixed;
   top: -5rem;
@@ -34,21 +39,27 @@ header h1 {
   color: white;
   font-family: "Montserrat Subrayada", sans-serif;
   font-size: 3rem;
-  margin: 0.8rem 0;
-  z-index: 100;
+  /* margin: 0.8rem 0; */
   transition: top 0.25s ease-in-out;
+  background-color: #00000090;
+  z-index: 100;
+  /* padding: 1.5rem 2rem; */
+  border-radius: 0 0 10px 10px;
+  backdrop-filter: blur(10px) saturate(200%);
+  padding: 0.4rem 1.2rem;
 }
 
 nav {
   position: fixed;
   top: 0;
-  right: 6rem;
+  right: 26rem;
   width: fit-content;
   display: flex;
   gap: 2rem;
   font-size: 1.5rem;
   background-color: #00000090;
   z-index: 100;
+  transition: right 0.25s ease-in-out;
   /* padding: 1.5rem 2rem; */
   border-radius: 0 0 10px 10px;
   backdrop-filter: blur(10px) saturate(200%);
@@ -57,7 +68,7 @@ nav {
 nav ul {
   display: flex;
   list-style: none;
-  gap: 1rem;
+  gap: 3rem;
   padding: 1rem 2rem;
   padding-right: 0;
 }
@@ -69,18 +80,22 @@ nav li {
 }
 
 nav li a {
-  color: #dc7515;
+  /* color: #dc7515; */
+  /* color: #ffa7c8; */
+  color: #ff006f;
   text-decoration: none;
   transition: color 0.25 ease-in-out;
 }
 
 nav li a:hover {
-  color: #914702;
+  /* color: #914702; */
+   color: #990038;
 }
 
 nav button {
   padding: 1.5rem 2rem;
-  background-color: #cb620089;
+  /* background-color: #cb620089; */
+  background-color: #990038;
   color: white;
   border: none;
   border-bottom-right-radius: 10px;
@@ -90,7 +105,8 @@ nav button {
 }
 
 nav button:hover {
-  background-color: #cb6200;
+  /* background-color: #cb6200; */
+  background-color:  #ff006f;
 }
 
 main {
