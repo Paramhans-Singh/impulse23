@@ -90,6 +90,7 @@ section .left {
 section .left span {
   text-align: center;
   font-size: 5rem;
+  color: ;
 }
 
 section .left p {
