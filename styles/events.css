@@ -24,7 +24,6 @@ main .bg img {
   z-index: -1;
 }
 
-
 main .bg::after {
   content: "";
   display: block;
@@ -80,6 +79,10 @@ section {
   border-bottom: 2px solid white;
 }
 
+section:last-of-type {
+  border-bottom: none;
+}
+
 section .left {
   display: flex;
   flex-direction: column;
@@ -90,12 +93,13 @@ section .left {
 section .left span {
   text-align: center;
   font-size: 5rem;
-  color: ;
+  font-style: italic;
 }
 
 section .left p {
   transform: rotate(-90deg);
   font-size: 2rem;
+  color: #c4c4c4;
 }
 
 section .right {
@@ -105,4 +109,50 @@ section .right {
 section img {
   width: 100%;
   aspect-ratio: 16 / 9;
+  border-radius: 20px 0 0 20px;
+  transition: 0.5s;
+}
+
+section .event-heading {
+  margin-top: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+section .event-heading h2 {
+  font-size: 3rem;
+  font-style: italic;
+}
+
+section .event-heading svg {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+section .desc {
+  width: 700px;
+  margin: 0.8rem 0;
+  padding-left: 0.5rem;
+  color: #ffffff8a;
+}
+
+section button {
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  padding: 1rem 3rem;
+  border-radius: 100px;
+  border: 1px solid white;
+  font-size: 1.3rem;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+  margin-bottom: 3rem;
+  transition: 0.2s ease-in-out;
+}
+
+section button:hover {
+  background: #ff006f;
+  border: 1px solid #ff006f;
 }

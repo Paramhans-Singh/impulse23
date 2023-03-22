@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   /* font-family: "Montserrat", sans-serif; */
-  font-family: "Goldman", cursive;
+  font-family: "Goldman", sans-serif;
 }
 
 :root {
@@ -27,8 +27,7 @@ body::before {
   z-index: -10;
 }
 
-header
-{
+header {
   display: flex;
 }
 
@@ -89,7 +88,7 @@ nav li a {
 
 nav li a:hover {
   /* color: #914702; */
-   color: #990038;
+  color: #990038;
 }
 
 nav button {
@@ -106,5 +105,5 @@ nav button {
 
 nav button:hover {
   /* background-color: #cb6200; */
-  background-color:  #ff006f;
+  background-color: #ff006f;
 }
