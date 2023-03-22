@@ -79,6 +79,12 @@ section {
   border-bottom: 2px solid white;
 }
 
+/* section:nth-child(even)
+{
+  display: flex;
+  flex-direction: row-reverse;
+} */
+
 section:last-of-type {
   border-bottom: none;
 }
