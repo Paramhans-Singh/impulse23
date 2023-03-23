@@ -1,5 +1,7 @@
 var document = window.document;
 
+console.log('hello');
+
 const sectionImages = document.querySelectorAll('section img');
 window.onscroll = () => {
 	sectionImages.forEach((img, i) => {
@@ -32,8 +34,9 @@ const list = document.querySelectorAll('.list-optn');
 
 var currSelected = speaker;
 
-for (var i = 1; i < list.length; i++) {
+for (var i = 0; i < list.length; i++) {
 	list[i].addEventListener('click', function() {
+		console.log('check');
 		currSelected.classList.remove('selected');
 		this.classList.add('selected');
 		currSelected = this;
