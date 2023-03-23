@@ -197,3 +197,8 @@ function updateTime() {
 	document.documentElement.style.setProperty('--timer-seconds', "'" + secs + "'");
 	requestAnimationFrame(updateTime);
 }
+
+const explore = document.querySelector('.explore-more');
+explore.addEventListener('click', function() {
+	window.location.href = './pages/events.html';
+});
