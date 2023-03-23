@@ -133,7 +133,7 @@ main .title p {
 section {
   color: white;
   display: flex;
-  justify-content: space-between;
+  column-gap: 2rem;
   padding-top: 4rem;
   border-bottom: 2px solid white;
 }
@@ -149,16 +149,28 @@ section:last-of-type {
 }
 
 section .left {
+  width: 12%;
   display: flex;
   flex-direction: column;
   gap: 18rem;
-  padding-left: 3rem;
+  margin-left: 3rem;
+  /* background-color: #ff006f; */
+   /* background-color: #4a4a4a90; */
+  backdrop-filter: blur(16px) saturate(200%);
+  background-color: rgba(255, 236, 255, 0.227);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  padding: 1.5rem;
+  border-radius: 40px 40px 10px 10px;
+  /* backdrop-filter: blur(10px) saturate(200%);
+  padding: 1.2rem; */
 }
 
 section .left span {
   text-align: center;
   font-size: 5rem;
   font-style: italic;
+  color: #ff006f;
 }
 
 section .left p {
