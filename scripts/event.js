@@ -7,7 +7,6 @@ const schedule = document.getElementById('schedule');
 const prizes = document.getElementById('prizes');
 
 // const section = Array.prototype.slice.call(document.querySelectorAll('.section'));
-
 var qualSelector = document.querySelector('.menu-heading');
 var qualContent = overview;
 
@@ -64,4 +63,21 @@ menuToggle[3].addEventListener('click', function() {
 	qualContent.classList.add('hide');
 	prizes.classList.remove('hide');
 	qualContent = prizes;
+});
+
+////////////////// FAQ ///////////////
+const quesConts = document.querySelectorAll('.faq-others .ques-cont');
+let open = -1;
+quesConts.forEach((cont, i) => {
+	cont.addEventListener('click', function() {
+		if (open >= 0) {
+			quesConts[open].classList.remove('open');
+		}
+		if (open !== i || open === -1) {
+			cont.classList.add('open');
+			open = i;
+		} else {
+			open = -1;
+		}
+	});
 });
