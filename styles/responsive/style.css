@@ -1,0 +1,57 @@
+@media only screen and (max-width: 768px) {
+  main .title {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  main .title h1 {
+    font-size: 4rem;
+  }
+
+  main .title h3 {
+    font-size: 2rem;
+  }
+
+  main .title p {
+    font-size: 1.5rem;
+  }
+
+  .clock-timer:before {
+    font-size: 2rem;
+  }
+
+  .clock-col {
+    margin: 0 20px;
+    min-width: 10px;
+  }
+
+  .clock-col:not(:last-child):before,
+  .clock-col:not(:last-child):after {
+    right: -24px;
+  }
+}
+
+@media only screen and (max-width: 512px) {
+  main .title {
+    padding: 0 0.5rem;
+  }
+
+  main .title h1 {
+    font-size: 3rem;
+  }
+
+  main .title h3 {
+    font-size: 2rem;
+  }
+
+  main .title p {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #events {
+    flex-wrap: wrap;
+  }
+}
