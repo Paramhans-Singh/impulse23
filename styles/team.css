@@ -2,7 +2,7 @@
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(../assets/images/team/background.jpg);
   background-attachment: fixed;
-  background-size: 110%;
+  background-size: cover;
   background-position: 47% 50%;
   position: relative;
 }
