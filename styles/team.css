@@ -31,7 +31,7 @@
 }
 
 #core .card-cont {
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
 }
 
 .card {
@@ -54,10 +54,15 @@
 
 .card h3 {
   color: rgba(255, 255, 255, 0.505);
+  max-width: 230px;
+}
+
+.card h2 {
+  max-width: 230px;
 }
 
 .card img {
-  width: 300px;
-  height: 400px;
+  width: 230px;
+  height: 295px;
   margin-bottom: 0.5rem;
 }
