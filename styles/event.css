@@ -179,22 +179,39 @@ main h3 {
 }
 
 .apply-btn {
-  background-color: #ff006f;
-  border-radius: 20px;
   text-align: center;
   margin-top: 1rem;
 }
 
 .apply-btn button {
+  border-radius: 20px;
+  background-color: #ff006f;
   padding: 1rem 2rem;
   font-size: 1.2rem;
   font-weight: bold;
-  background-color: transparent;
   border: 0;
   color: white;
-  border-radius: 10px;
+  border-radius: 20px;
   cursor: pointer;
   transition: 0.2s ease-in-out;
+  width: 100%;
+}
+
+.apply-btn button:hover {
+  background-color: #ff006fc8;
+}
+
+.apply-btn button:disabled {
+  background-color: #990038;
+  cursor: not-allowed;
+}
+
+.apply-btn button:disabled::after {
+  content: "Applications not open yet";
+  display: block;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.751);
+  font-size: 1rem;
 }
 
 .rules-heading {
