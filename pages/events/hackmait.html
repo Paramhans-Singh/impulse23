@@ -12,17 +12,21 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles/global.css" />
-    <link rel="stylesheet" href="../styles/responsive/global.css" />
     <link rel="stylesheet" href="/styles/event.css" />
+    <link rel="stylesheet" href="/styles/responsive/global.css" />
+    <link rel="stylesheet" href="/styles/responsive/event.css" />
   </head>
   <body>
     <header>
-      <h1>IMPULSE ' 23</h1>
+      <div class="nav-cont">
+        <div class="nav-icon"></div>
+        <h1>IMPULSE ' 23</h1>
+      </div>
       <nav>
         <ul>
-          <li><a href="https://iosdimpulse.tech/">Home</a></li>
-          <li><a href="/pages/events.html">Events</a></li>
-          <li><a href="">Our Team</a></li>
+          <li><a href="">Home</a></li>
+          <li><a href="./pages/events.html">Events</a></li>
+          <li><a href="./pages/team.html">Our Team</a></li>
         </ul>
         <a href="https://forms.gle/7cgnjZzK2qZfVvtB7" target="_blank"
           ><button>Volunteer Now</button></a
@@ -466,43 +470,10 @@
         <h1 class="not-announce">Prizes not annonced yet</h1>
       </div>
     </div>
-    <script src="/scripts/event.js"></script>
     <script>
       const date = "2023-05-01";
-      document.addEventListener("DOMContentLoaded", () =>
-        requestAnimationFrame(updateTime)
-      );
-
-      function updateTime() {
-        const currDate = new Date();
-        const eventDate = new Date(date);
-        const distance = Math.round(eventDate.getTime() - currDate.getTime());
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hrs = Math.floor(
-          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        );
-        var mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var secs = Math.floor((distance % (1000 * 60)) / 1000);
-
-        // console.log(seconds);
-        document.documentElement.style.setProperty(
-          "--timer-day",
-          "'" + days + "'"
-        );
-        document.documentElement.style.setProperty(
-          "--timer-hours",
-          "'" + hrs + "'"
-        );
-        document.documentElement.style.setProperty(
-          "--timer-minutes",
-          "'" + mins + "'"
-        );
-        document.documentElement.style.setProperty(
-          "--timer-seconds",
-          "'" + secs + "'"
-        );
-        requestAnimationFrame(updateTime);
-      }
     </script>
+    <script src="/scripts/global.js"></script>
+    <script src="/scripts/event.js"></script>
   </body>
 </html>

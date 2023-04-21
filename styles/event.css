@@ -5,7 +5,7 @@
 
 main {
   position: relative;
-  padding: 3rem 0;
+  padding: 3rem 2rem;
   padding-top: 12rem;
   color: white;
   text-align: center;
@@ -92,6 +92,9 @@ main h3 {
   display: flex;
   justify-content: center;
   column-gap: 24px;
+  flex-wrap: wrap-reverse;
+  padding: 0 2rem;
+  row-gap: 2rem;
 }
 
 .main-content {
@@ -127,6 +130,7 @@ main h3 {
 
 .apply-whole {
   width: 30%;
+  min-width: 340px;
 }
 
 .apply-card {
@@ -290,6 +294,9 @@ main h3 {
 .head-card-cont {
   display: flex;
   gap: 3.5rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .head-card {
@@ -311,10 +318,11 @@ main h3 {
 
 .head-card h3 {
   color: rgba(255, 255, 255, 0.505);
+  font-size: 1rem;
 }
 
 .head-card img {
-  width: 250px;
+  width: 200px;
   /* height: 400px; */
   aspect-ratio: 3 / 4;
   margin-bottom: 0.5rem;
@@ -352,6 +360,7 @@ main h3 {
 .faq-static {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .faq-static div {
@@ -488,8 +497,8 @@ main h3 {
 
 #events .card {
   border-radius: 20px;
-  height: 400px;
-  width: 340px;
+  height: 360px;
+  width: 280px;
   overflow: hidden;
   /* background-color: #042a52; */
   background-color: #990038;
