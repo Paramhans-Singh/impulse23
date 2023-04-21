@@ -1,6 +1,7 @@
 @media only screen and (max-width: 1000px) {
   #events {
     flex-wrap: wrap;
+    padding-left: 0;
   }
 }
 
