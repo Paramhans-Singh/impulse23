@@ -257,7 +257,8 @@ main .title p {
   background-attachment: fixed;
   background-size: 110%;
   background-position: 47% 50%;
-
+  background-size: cover;
+  /* background-repeat: no-repeat; */
   position: relative;
 
   --btns: white;
