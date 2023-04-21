@@ -3,7 +3,6 @@ const events = document.getElementById("events");
 const title = document.querySelector("main .title");
 // const impulse = document.querySelector("main .title h1");
 const headerH1 = document.querySelector("header h1");
-const nav = document.querySelector("nav");
 headerH1.style.top = "-5rem";
 nav.style.right = "45%";
 nav.style.transform = "translateX(50%)";
@@ -187,7 +186,7 @@ document.addEventListener("DOMContentLoaded", () =>
 
 function updateTime() {
   const currDate = new Date();
-  const eventDate = new Date("2023-04-25");
+  const eventDate = new Date("2023-05-23");
   const distance = Math.round(eventDate.getTime() - currDate.getTime());
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var hrs = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));

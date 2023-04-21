@@ -71,10 +71,20 @@ main h3 {
   color: #fff;
 }
 
+.main-content .content {
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+}
+
 .section {
   margin-top: 2rem;
   /* display: flex;
   justify-content: center; */
+}
+
+.not-announce {
+  text-align: center;
 }
 
 .overview-main {
@@ -102,6 +112,17 @@ main h3 {
   line-height: 32px;
   font-weight: 400;
   letter-spacing: 0.12rem;
+}
+
+.main-content .content ul li {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  letter-spacing: 0.12rem;
+}
+
+.main-content .content strong {
+  font-weight: 600;
 }
 
 .apply-whole {
@@ -149,6 +170,12 @@ main h3 {
   border-radius: 20px;
   gap: 8px;
   margin-top: 2.5rem;
+}
+
+.apply-count::after {
+  content: var(--timer-day) "d  " var(--timer-hours) "h " var(--timer-minutes)
+    "m " var(--timer-seconds) "s";
+  font-size: 1.2rem;
 }
 
 .apply-btn {
