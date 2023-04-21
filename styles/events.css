@@ -146,9 +146,9 @@ section {
   flex-direction: row-reverse;
 } */
 
-section:last-of-type {
+/* section:last-of-type {
   border-bottom: none;
-}
+} */
 
 section .left {
   width: 10%;
