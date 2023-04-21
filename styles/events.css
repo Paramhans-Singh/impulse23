@@ -13,7 +13,7 @@ html {
 
 #vertical_nav ul li {
   text-align: right;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.8rem;
 }
 
 #vertical_nav ul li .container {
@@ -27,8 +27,8 @@ li {
   list-style: none;
 }
 .dot {
-  height: 15px;
-  width: 15px;
+  height: 12px;
+  width: 12px;
   background-color: #ff006f;
   border-radius: 50%;
   display: inline-block;
@@ -64,6 +64,7 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding-right: 2.5rem;
 }
 
 main .bg {
@@ -168,9 +169,10 @@ section .left {
 
 section .left span {
   text-align: center;
-  font-size: 5rem;
+  font-size: 5vw;
   font-style: italic;
   color: #ff006f;
+  transform: translateX(-5%);
 }
 
 section .left p {
@@ -186,7 +188,7 @@ section .right {
 section img {
   width: 100%;
   aspect-ratio: 16 / 9;
-  border-radius: 20px 0 0 20px;
+  border-radius: 20px;
   transition: 0.5s;
 }
 
@@ -209,7 +211,7 @@ section .event-heading svg {
 }
 
 section .desc {
-  width: 700px;
+  max-width: 700px;
   margin: 0.8rem 0;
   padding-left: 0.5rem;
   color: #ffffff8a;

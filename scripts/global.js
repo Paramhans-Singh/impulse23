@@ -1,5 +1,6 @@
 //////// NAV ICON CLICK /////////
 const navIcon = document.querySelector(".nav-icon");
+const nav = document.querySelector("nav");
 navIcon.addEventListener("click", () => {
   if (nav.classList.contains("shown")) {
     nav.classList.remove("shown");
