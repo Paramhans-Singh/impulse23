@@ -19,22 +19,26 @@ quesConts.forEach((cont, i) => {
 	});
 });
 
-const uiux = document.getElementById('uiux');
-uiux.addEventListener('click', function() {
-	window.location.href = './uiux.html';
-});
-const valo = document.getElementById('valo');
-valo.addEventListener('click', function() {
-	window.location.href = './valo.html';
-});
-const aiml = document.getElementById('aiml');
-aiml.addEventListener('click', function() {
-	window.location.href = './aiml.html';
-});
-const cp = document.getElementById('cp');
-cp.addEventListener('click', function() {
-	window.location.href = './cp.html';
-});
+// const uiux = document.getElementById('uiux');
+// uiux.addEventListener('click', function() {
+// 	window.location.href = './uiux.html';
+// });
+// const hackmait = document.getElementById('hackmait');
+// hackmait.addEventListener('click', function() {
+// 	window.location.href = './hackmait.html';
+// });
+// const valo = document.getElementById('valo');
+// valo.addEventListener('click', function() {
+// 	window.location.href = './valo.html';
+// });
+// const aiml = document.getElementById('aiml');
+// aiml.addEventListener('click', function() {
+// 	window.location.href = './aiml.html';
+// });
+// const cp = document.getElementById('cp');
+// cp.addEventListener('click', function() {
+// 	window.location.href = './cp.html';
+// });
 
 /* This code is adding an event listener to the document object that listens for the "DOMContentLoaded"
 event, which is fired when the initial HTML document has been completely loaded and parsed. Once
