@@ -28,6 +28,10 @@ window.onscroll = () => {
   }
 };
 
+/**
+ * This function creates a particle effect using Three.js library with lights, fog, and a rotating
+ * texture.
+ */
 function particleEffect() {
   // PARTICLE EFFECT
   var element = document.getElementById("particles") || document.body;
@@ -184,6 +188,9 @@ document.addEventListener("DOMContentLoaded", () =>
   requestAnimationFrame(updateTime)
 );
 
+/**
+ * The function updates a countdown timer on a webpage to a specific event date.
+ */
 function updateTime() {
   const currDate = new Date();
   const eventDate = new Date("2023-05-23");

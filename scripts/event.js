@@ -107,10 +107,19 @@ cp.addEventListener("click", function () {
   window.location.href = "./cp.html";
 });
 
+/* This code is adding an event listener to the document object that listens for the "DOMContentLoaded"
+event, which is fired when the initial HTML document has been completely loaded and parsed. Once
+this event is fired, the arrow function is executed, which calls the "updateTime" function using the
+"requestAnimationFrame" method. This ensures that the "updateTime" function is called at the optimal
+time for rendering, which helps to improve performance and reduce unnecessary resource usage. */
 document.addEventListener("DOMContentLoaded", () =>
   requestAnimationFrame(updateTime)
 );
 
+/**
+ * The function updates the time remaining until a specified event in days, hours, minutes, and
+ * seconds.
+ */
 function updateTime() {
   const currDate = new Date();
   const eventDate = new Date(date);
