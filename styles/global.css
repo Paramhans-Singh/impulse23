@@ -113,6 +113,31 @@ nav button:hover {
   background-color: #ff006f;
 }
 
+nav .drop {
+  position: absolute;
+  top: 0;
+  left: 8%;
+  display: flex;
+  padding-top: 12%;
+  height: 0;
+  overflow-y: hidden;
+}
+
+nav .drop ul {
+  flex-flow: column;
+  padding: 1.2rem;
+  background-color: #00000090;
+  transition: 0.25s ease-in-out;
+  border-radius: 10px;
+  backdrop-filter: blur(10px) saturate(200%);
+  gap: 1.5rem;
+}
+
+nav .events:hover + .drop,
+.drop:hover {
+  height: fit-content;
+}
+
 .reach-us {
   padding: 2rem;
   color: #fff;
