@@ -89,6 +89,7 @@ nav li a {
   color: #ff006f;
   text-decoration: none;
   transition: color 0.25 ease-in-out;
+  z-index: 150;
 }
 
 nav li a:hover {
@@ -133,7 +134,7 @@ nav .drop ul {
   gap: 1.5rem;
 }
 
-nav .events:hover + .drop,
+nav .events a:hover + .drop,
 .drop:hover {
   height: fit-content;
 }
