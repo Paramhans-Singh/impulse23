@@ -78,10 +78,10 @@
     height: 0;
   }
 
-  nav .events a:focus + .drop,
+  /* nav .events a:focus + .drop,
   .drop:focus {
     height: fit-content;
-  }
+  } */
 
   header h1 {
     position: static;
