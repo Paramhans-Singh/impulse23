@@ -36,6 +36,18 @@ header .nav-icon {
   display: none;
 }
 
+.nav-cont img {
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 5.2%;
+  background-color: #00000090;
+  z-index: 100;
+  border-radius: 0 0 10px 10px;
+  backdrop-filter: blur(10px) saturate(200%);
+  padding: 0.5rem 2rem;
+}
+
 header h1 {
   position: fixed;
   top: 0;

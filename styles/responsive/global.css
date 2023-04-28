@@ -90,9 +90,15 @@
     /* text-align: center; */
     display: flex;
     gap: 1rem;
+    font-size: 2rem;
+  }
+
+  .nav-cont img {
+    position: static;
     background-color: transparent;
     backdrop-filter: unset;
-    font-size: 2rem;
+    transform: translateX(-10%);
+    margin: 0 auto;
   }
 
   header .nav-icon {
