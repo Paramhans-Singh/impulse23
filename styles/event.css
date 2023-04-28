@@ -650,3 +650,9 @@ main h3 {
   font-size: 20px;
   letter-spacing: 0.12em;
 }
+
+@media only screen and (max-width: 500px) {
+  main h1 {
+    font-size: 3.5rem;
+  }
+}

@@ -64,3 +64,17 @@
     padding-left: 0;
   }
 }
+
+@media only screen and (max-width: 512px) {
+  .clock-wrapper {
+    padding: 25px 0;
+  }
+
+  .clock-timer::before {
+    font-size: 1.5rem;
+  }
+
+  .clock-col {
+    margin: 0 15px;
+  }
+}
