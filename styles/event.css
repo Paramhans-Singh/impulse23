@@ -187,7 +187,10 @@ main h3 {
   margin-top: 1rem;
 }
 
-.apply-btn button {
+.apply-btn button,
+.apply-btn .btn {
+  display: block;
+  text-decoration: none;
   border-radius: 20px;
   background-color: #ff006f;
   padding: 1rem 2rem;
@@ -201,16 +204,19 @@ main h3 {
   width: 100%;
 }
 
-.apply-btn button:hover {
+.apply-btn button:hover,
+.apply-btn .btn:hover {
   background-color: #ff006fc8;
 }
 
-.apply-btn button:disabled {
+.apply-btn button:disabled,
+.apply-btn .btn:disabled {
   background-color: #990038;
   cursor: not-allowed;
 }
 
-.apply-btn button:disabled::after {
+.apply-btn button:disabled::after,
+.apply-btn .btn:disabled::after {
   content: "Applications not open yet";
   display: block;
   font-weight: 400;
@@ -651,8 +657,39 @@ main h3 {
   letter-spacing: 0.12em;
 }
 
-@media only screen and (max-width: 500px) {
-  main h1 {
-    font-size: 3.5rem;
-  }
+#themes .rules {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+#themes .rules h3 {
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+#themes .rules h3 svg {
+  transition: 0.24s ease-in-out;
+}
+
+#themes .rules h3.open svg {
+  transform: rotate(180deg);
+}
+
+#themes .rules li {
+  margin-bottom: 2rem;
+}
+
+#themes .rules ul {
+  max-height: 0;
+  overflow-y: hidden;
+  transition: 0.24s ease-in-out;
+  user-select: none;
 }
