@@ -270,3 +270,111 @@ nav .events a:hover + .drop,
   text-align: center;
   margin-top: 10px;
 }
+
+
+#sponsors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  background-color: #d5cfdd;
+  /* text-align: center; */
+}
+
+#sponsors h2 {
+  margin-top: 2rem;
+  font-size: 4rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.sponsor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 3rem;
+}
+
+.sponsor img {
+  width: 120px;
+  /* max-width: 300px; */
+  /* max-height: 200px; */
+}
+
+.sponsor h1 {
+  margin: 1.5rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.sponsor h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1.5rem 0;
+}
+
+.main img {
+  width: 200px;
+  margin: 0 2rem;
+}
+
+.main-sponsors {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+
+}
+
+
+
+.other-sponsors {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .sponsor {
+    margin: 5px;
+  }
+
+  .sponsor img {
+    max-width: 150px;
+    max-height: 75px;
+  }
+
+  .sponsor p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  
+
+  #sponsors h2 {
+    font-size: 2.5rem;
+  }
+  
+  .sponsor {
+    margin: 1rem
+  }
+
+  .sponsor img {
+    max-width: 120px;
+    max-height: 60px;
+  }
+
+  .sponsor p {
+    font-size: 12px;
+  }
+
+  .main-sponsors {
+    flex-direction: column;
+  }
+
+  .other-sponsors {
+    flex-direction: column;
+  }
+}
