@@ -95,13 +95,13 @@ function particleEffect() {
 
   // Particles material
   particleMaterial = new THREE.PointsMaterial({
-    size: 6.5,
+    size: 5,
     sizeAttenuation: false,
     map: sprite,
     alphaTest: 0.5,
     transparent: true,
     opacity: 0.8,
-    color: 0xf2d79f,
+    color: 0xf1ef99,
     blending: THREE.AdditiveBlending,
   });
   /* //-----------------------------------
@@ -194,7 +194,7 @@ document.addEventListener("DOMContentLoaded", () =>
  */
 function updateTime() {
   const currDate = new Date();
-  const eventDate = new Date("2023-05-23");
+  const eventDate = new Date("2024-04-15");
   const distance = Math.round(eventDate.getTime() - currDate.getTime());
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var hrs = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
