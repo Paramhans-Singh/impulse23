@@ -27,6 +27,8 @@ main h1 {
   font-size: 4.5rem;
   line-height: 90%;
   color: rgba(255, 255, 255, 0.91);
+  /* animation: glitch 1s infinite; */
+
 }
 
 main h3 {
