@@ -1,4 +1,5 @@
 {
   "cmake.configureOnOpen": false,
-  "docwriter.progress.trackFunctions": false
+  "docwriter.progress.trackFunctions": false,
+  "liveServer.settings.port": 5501
 }
