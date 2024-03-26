@@ -715,3 +715,8 @@ main h3 {
   transition: 0.24s ease-in-out;
   user-select: none;
 }
+
+
+.card img {
+  object-fit: cover;
+}
