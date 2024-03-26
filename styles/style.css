@@ -522,3 +522,9 @@ main .title p {
   font-size: 2rem;
   line-height: 150%;
 }
+
+
+
+#hackmait img {
+  object-fit: cover;
+}
