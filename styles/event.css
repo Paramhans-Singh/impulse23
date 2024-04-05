@@ -1,5 +1,5 @@
 :root {
-  --btn: #ff006f;
+  --btn: #D9EDBF;
   --sec-btn: #ff006f2a;
 }
 
@@ -27,18 +27,40 @@ main h1 {
   font-size: 4.5rem;
   line-height: 90%;
   color: rgba(255, 255, 255, 0.91);
+  /* animation: glitch 1s infinite; */
+
 }
 
 main h3 {
   font-size: 2.5rem;
   color: rgba(255, 255, 255, 0.585);
+  font-family: "Rubik Glitch", system-ui;
   font-weight: normal;
+  animation: glitch 1s infinite;
+  
+}
+@keyframes glitch {
+  0% {
+    text-shadow: 0 0 rgba(255, 255, 255, 0.585), 0 0 rgba(255, 255, 255, 0.585), 0 0 green;
+  }
+  25% {
+    text-shadow: 1px -1px rgba(255, 255, 255, 0.585), -1px 1px rgba(255, 255, 255, 0.585), 1px 1px green;
+  }
+  50% {
+    text-shadow: -1px 1px rgba(255, 255, 255, 0.585), 1px 1px rgba(255, 255, 255, 0.585), 1px -1px green;
+  }
+  75% {
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.585), -1px -1px rgba(255, 255, 255, 0.585), 1px -1px green;
+  }
+  100% {
+    text-shadow: -1px -1px rgba(255, 255, 255, 0.585), 1px -1px rgba(255, 255, 255, 0.585), -1px 1px green;
+  }
 }
 
 .menu {
   margin: auto;
   margin-top: 2rem;
-  background-color: #ff006f2a;
+  background-color: #9DBC982a;
   width: fit-content;
   border-radius: 10px;
 }
@@ -57,7 +79,7 @@ main h3 {
 .menu button.selected {
   padding: 1rem 2rem;
   font-size: 1.2rem;
-  background-color: #ff006f;
+  background-color: #9DBC98;
 }
 
 .hide {
@@ -146,7 +168,7 @@ main h3 {
 }
 
 .apply-det {
-  border-left: 4px solid #ff006f;
+  border-left: 4px solid #9DBC98;
   padding-left: 10px;
   margin-bottom: 1rem;
 }
@@ -169,7 +191,7 @@ main h3 {
 }
 
 .apply-count {
-  background-color: #ff006f2a;
+  background-color: #31363F;
   padding: 16px;
   border-radius: 20px;
   gap: 8px;
@@ -192,7 +214,7 @@ main h3 {
   display: block;
   text-decoration: none;
   border-radius: 20px;
-  background-color: #ff006f;
+  background-color: #76ABAE;
   padding: 1rem 2rem;
   font-size: 1.2rem;
   font-weight: bold;
@@ -206,7 +228,7 @@ main h3 {
 
 .apply-btn button:hover,
 .apply-btn .btn:hover {
-  background-color: #ff006fc8;
+  background-color: #C3E2C2;
 }
 
 .apply-btn button:disabled,
@@ -468,7 +490,7 @@ main h3 {
 
 .more-events-heading a {
   text-decoration: none;
-  border: 2px solid #ff006f;
+  border: 2px solid #D9EDBF;
   color: #fff;
   border-radius: 15px;
   padding: 12px;
@@ -692,4 +714,9 @@ main h3 {
   overflow-y: hidden;
   transition: 0.24s ease-in-out;
   user-select: none;
+}
+
+
+.card img {
+  object-fit: cover;
 }

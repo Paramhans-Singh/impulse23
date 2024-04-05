@@ -29,7 +29,7 @@ li {
 .dot {
   height: 12px;
   width: 12px;
-  background-color: #ff006f;
+  background-color: #76ABAE;
   border-radius: 50%;
   display: inline-block;
 }
@@ -105,15 +105,19 @@ main .title {
 }
 
 main .title h1 {
-  font-family: "Montserrat Subrayada", sans-serif;
+  /* font-family: "Montserrat Subrayada", sans-serif; */
+  font-family: "Rubik Glitch", system-ui;
   font-size: 6rem;
+  font-weight: 100;
   margin: 0.8rem 0;
+  animation: glitch 0.5s infinite;
 }
 
 main .title h3 {
   font-size: 3rem;
   font-weight: 500;
   opacity: 0.8;
+  
 }
 
 main .title p strong {
@@ -171,7 +175,7 @@ section .left span {
   text-align: center;
   font-size: 5vw;
   font-style: italic;
-  color: #ff006f;
+  color: #D9EDBF;
   transform: translateX(-5%);
 }
 
@@ -237,10 +241,29 @@ section .btn {
 
 section button:hover,
 section .btn:hover {
-  background: #ff006f;
-  border: 1px solid #ff006f;
+  background: #9DBC98;
+  border: 1px solid #9DBC98;
 }
 
 .faq-heading {
   display: flex;
+}
+
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0 0 blue, 0 0 blue, 0 0 green;
+  }
+  25% {
+    text-shadow: 2px -2px blue, -2px 2px blue, 2px 2px green;
+  }
+  50% {
+    text-shadow: -2px 2px blue, 2px 2px blue, 2px -2px green;
+  }
+  75% {
+    text-shadow: 2px 2px blue, -2px -2px blue, 2px -2px green;
+  }
+  100% {
+    text-shadow: -2px -2px blue, 2px -2px blue, -2px 2px green;
+  }
 }

@@ -1,125 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Impulse '23 | Events</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Montserrat+Subrayada:wght@700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="../styles/events.css" />
-    <link rel="stylesheet" href="../styles/global.css" />
-    <link rel="stylesheet" href="../styles/responsive/global.css" />
-    <link rel="stylesheet" href="../styles/responsive/events.css" />
-    <link rel="shortcut icon" href="/assets/favicon.svg" type="image/x-icon" />
-  </head>
-  <body>
-    <header>
-      <div class="nav-cont">
-        <div class="nav-icon"></div>
-        <a href="https://iosdimpulse.tech/"><img src="/assets/images/logos/impulse.png" alt="" /></a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="https://iosdimpulse.tech/">Home</a></li>
-          <li><a href="">Events</a></li>
-          <li><a href="./team.html">Our Team</a></li>
-        </ul>
-        <a href="https://forms.gle/7cgnjZzK2qZfVvtB7" target="_blank"
-          ><button>Volunteer Now</button></a
-        >
-      </nav>
-    </header>
-    <div id="vertical_nav">
-      <ul class="menu">
-        <li class="list">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Impulse '24 | Events</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Montserrat+Subrayada:wght@700&family=Montserrat:wght@300;400;500;600;700;800;900&family=Rubik+Glitch&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../styles/events.css" />
+  <link rel="stylesheet" href="../styles/global.css" />
+  <link rel="stylesheet" href="../styles/responsive/global.css" />
+  <link rel="stylesheet" href="../styles/responsive/events.css" />
+  <link rel="shortcut icon" href="/assets/favicon.svg" type="image/x-icon" />
+</head>
+<style>
+  .title {
+    padding: 20px;
+    padding-bottom: 0;
+    border-radius: 10px;
+    background: rgba(1, 94, 89, 0.3);
+    display: flex;
+    align-items: center;
+    height: min-content;
+    margin: 20px;
+  }
+
+  @media (max-width: 1024px) {
+    .title {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .title {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 80px;
+      margin-bottom: 20px;
+      margin-left: 40px !important;
+    }
+
+    .title img {
+      width: 320px;
+    }
+
+  }
+
+  @media (max-width: 426px) {
+    .title {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 80px;
+      margin-left: 0px !important;
+      padding: 20px !important;
+      margin-left: 20px !important;
+    }
+
+    .title img {
+      width: 320px;
+    }
+
+  }
+
+  @media (max-width: 376px) {
+    .title {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 80px;
+      margin-left: 0px !important;
+      padding: 20px !important;
+      margin-left: 7px !important;
+    }
+
+    .title img {
+      width: 300px;
+    }
+
+  }
+
+  @media (max-width: 321px) {
+    .title {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 100px;
+      margin-left: 0px !important;
+      padding: 10px !important;
+      background: transparent !important;
+    }
+
+    .title img {
+      width: 300px;
+    }
+
+  }
+</style>
+
+<body>
+  <header>
+    <div class="nav-cont">
+      <div class="nav-icon"></div>
+      <a href="/"><img src="/assets/images/logos/impulse24Green.svg" alt="" /></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="">Events</a></li>
+        <li><a href="./team.html">Our Team</a></li>
+      </ul>
+      <a href="https://forms.gle/DU13FWochargGnSw5" target="_blank"><button>Volunteer Now</button></a>
+    </nav>
+  </header>
+  <div id="vertical_nav">
+    <ul class="menu">
+      <li class="list">
+        <div class="container">
+          <a href="#speaker"><span class="dot speaker list-optn selected"></span></a>
+          <span class="label">Speaker</span>
+        </div>
+      </li>
+      <li class="list">
+        <div class="container">
+          <a href="#hackmait"><span class="dot hackmait list-optn"></span></a>
+          <span class="label">HackMAIT 5.0</span>
+        </div>
+      </li>
+      <li class="list">
+        <div class="container">
+          <a href="#nnn"><span class="dot nnn list-optn"></span></a>
+          <span class="label">NNN 2.0</span>
+        </div>
+      </li>
+      <li>
+        <div class="container">
+          <a href="#chess"><span class="dot chess list-optn"></span></a>
+          <span class="label">Chess</span>
+        </div>
+      </li>
+      <li class="list">
+        <div class="container">
+          <a href="#valorent"><span class="dot valorent list-optn"></span></a>
+          <span class="label">Gaming</span>
+        </div>
+      </li>
+      <li class="list">
+        <div class="container">
+          <a href="#cp"><span class="dot cp list-optn"></span></a>
+          <span class="label">Circular Coding</span>
+        </div>
+      </li>
+      <li class="list">
+        <div class="container">
+          <a href="#quiz"><span class="dot quiz list-optn"></span></a>
+          <span class="label">Quiz</span>
+        </div>
+      </li>
+      <li class="list">
+        <div class="container">
+          <a href="#codename"><span class="dot uiux list-optn"></span></a>
+          <span class="label">Codename Quest</span>
+        </div>
+      </li>
+      <!--         <li class="list">
           <div class="container">
-            <a href="#speaker"
-              ><span class="dot speaker list-optn selected"></span
-            ></a>
-            <span class="label">Speaker</span>
-          </div>
-        </li>
-        <li class="list">
-          <div class="container">
-            <a href="#hackmait"><span class="dot hackmait list-optn"></span></a>
-            <span class="label">HackMAIT 4.0</span>
-          </div>
-        </li>
-        <li class="list">
-          <div class="container">
-            <a href="#nnn"><span class="dot nnn list-optn"></span></a>
-            <span class="label">NNN</span>
-          </div>
-        </li>
-        <li>
-          <div class="container">
-            <a href="#chess"><span class="dot chess list-optn"></span></a>
-            <span class="label">Chess</span>
-          </div>
-        </li>
-        <li class="list">
-          <div class="container">
-            <a href="#valorent"><span class="dot valorent list-optn"></span></a>
-            <span class="label">Gaming</span>
-          </div>
-        </li>
-        <li class="list">
-          <div class="container">
-            <a href="#cp"><span class="dot cp list-optn"></span></a>
-            <span class="label">Coding Crusade</span>
-          </div>
-        </li>
-        <li class="list">
-          <div class="container">
-            <a href="#quiz"><span class="dot quiz list-optn"></span></a>
-            <span class="label">Quiz</span>
-          </div>
-        </li>
-        <li class="list">
-          <div class="container">
-            <a href="#uiux"><span class="dot uiux list-optn"></span></a>
-            <span class="label">UXplore</span>
-          </div>
-        </li>
-        <!-- <li class="list">
-          <div class="container">
-            <a href="#pitch"><span class="dot pitch list-optn"></span></a>
-            <span class="label">Business Idea</span>
+            <a href="#tressure"><span class="dot pitch list-optn"></span></a>
+            <span class="label">Tressure Hunt</span>
           </div>
         </li> -->
-      </ul>
+    </ul>
+  </div>
+  <main id="speaker" class="section">
+    <div class="bg">
+      <img src="../assets/images/speaker-event-AI.jpg" alt="" />
     </div>
-    <main id="speaker" class="section">
-      <div class="bg">
-        <img src="../assets/images/speaker-event.jpg" alt="" />
-      </div>
-      <div class="title">
+    <div class="title">
+      <img src="../assets/images/NishantChahar.png" alt="">
+      <div>
         <h3>Speaker Event</h3>
-        <h1>The Most Awaited Event</h1>
-        <p>The speaker will be annonced soon. Stay tuned for more updates.</p>
+        <!-- <h1>The Most Awaited Event</h1> -->
+        <h1>
+          Mr. Nishant Chahar
+        </h1>
+        <!-- <p>The speaker will be annonced soon. Stay tuned for more updates.</p> -->
+        <p>
+          Content Creator and SDE @ Microsoft.
+        </p>
       </div>
-    </main>
-    <h2 class="events-title">Our Events</h2>
-    <section id="hackmait" class="section">
-      <div class="left">
-        <span>01</span>
-        <p>Hackathon</p>
-      </div>
-      <div class="right">
-        <img src="../assets/images/hackmait-main.jpg" alt="" />
+    </div>
+  </main>
+  <h2 class="events-title">Our Events</h2>
+  <section id="hackmait" class="section">
+    <div class="left">
+      <span>01</span>
+      <p>Hackathon</p>
+    </div>
+    <div class="right">
+      <img src="../assets/images/events/HackMAIT5.0.jpg" alt="" />
 
-        <div class="event-heading">
-          <h2>HackMAIT 4.0</h2>
-          <svg viewBox="12.335 29.5 172.265 141">
+      <div class="event-heading">
+        <h2>HackMAIT 5.0</h2>
+        <!-- <svg viewBox="12.335 29.5 172.265 141">
             <g>
               <path
                 d="M114.1 170.5c-30.2 0-57-19.2-66.7-47.8-.5-1.6.3-3.3 1.9-3.8 1.6-.5 3.3.3 3.8 1.9 8.9 26.1 33.4 43.7 61 43.7 35.5 0 64.5-28.9 64.5-64.5 0-35.5-28.9-64.5-64.5-64.5-27.6 0-52.1 17.6-61 43.7-.5 1.6-2.2 2.4-3.8 1.9-1.6-.5-2.4-2.2-1.9-3.8 9.7-28.6 36.5-47.8 66.7-47.8 38.9 0 70.5 31.6 70.5 70.5s-31.6 70.5-70.5 70.5z"
@@ -132,31 +217,29 @@
                 data-color="2"
               ></path>
             </g>
-          </svg>
-        </div>
-        <p class="desc">
-          HackMAIT is a 26-hour in person hackathon with a variety of themes
-          ranging from Ed-Tech, to Healthcare, and Cybersecurity. With HackMAIT
-          4.0, our aim is to foster innovation and creativity captured in the
-          young minds of college students, all the while encouraging a focus on
-          learning, having fun, and making friends.
-        </p>
-        <a class="btn" target="_blank" href="/pages/events/hackmait.html"
-          >View event</a
-        >
+          </svg> -->
       </div>
-    </section>
-    <section id="nnn" class="section">
-      <div class="left">
-        <span>02</span>
-        <p>AI/ML</p>
-      </div>
-      <div class="right">
-        <img src="../assets/images/events/aiml.png" alt="" />
+      <p class="desc">
+        HackMAIT is a 36-hour in person hackathon with a variety of themes
+        ranging from Ed-Tech, to Healthcare, and Cybersecurity. With HackMAIT
+        5.0, our aim is to foster innovation and creativity captured in the
+        young minds of college students, all the while encouraging a focus on
+        learning, having fun, and making friends.
+      </p>
+      <a class="btn" target="_blank" href="/pages/events/hackmait.html">View event</a>
+    </div>
+  </section>
+  <section id="nnn" class="section">
+    <div class="left">
+      <span>02</span>
+      <p>AI/ML</p>
+    </div>
+    <div class="right">
+      <img src="../assets/images/events/aiml.png" alt="" />
 
-        <div class="event-heading">
-          <h2>Neural Network Nexus</h2>
-          <svg viewBox="12.335 29.5 172.265 141">
+      <div class="event-heading">
+        <h2>Neural Network Nexus 2.0</h2>
+        <!-- <svg viewBox="12.335 29.5 172.265 141">
             <g>
               <path
                 d="M114.1 170.5c-30.2 0-57-19.2-66.7-47.8-.5-1.6.3-3.3 1.9-3.8 1.6-.5 3.3.3 3.8 1.9 8.9 26.1 33.4 43.7 61 43.7 35.5 0 64.5-28.9 64.5-64.5 0-35.5-28.9-64.5-64.5-64.5-27.6 0-52.1 17.6-61 43.7-.5 1.6-2.2 2.4-3.8 1.9-1.6-.5-2.4-2.2-1.9-3.8 9.7-28.6 36.5-47.8 66.7-47.8 38.9 0 70.5 31.6 70.5 70.5s-31.6 70.5-70.5 70.5z"
@@ -169,30 +252,28 @@
                 data-color="2"
               ></path>
             </g>
-          </svg>
-        </div>
-        <p class="desc">
-          Neural Network Nexus is a event to showcase your skills and
-          understanding of Machine Learning and Data Science concepts where you
-          will show your abilities in solving real world problems by building AI
-          Bots
-        </p>
-        <a class="btn" target="_blank" href="/pages/events/aiml.html"
-          >View event</a
-        >
+          </svg> -->
       </div>
-    </section>
-    <section id="chess" class="section">
-      <div class="left">
-        <span>03</span>
-        <p>Chess</p>
-      </div>
-      <div class="right">
-        <img src="../assets/images/events/chess.png" alt="" />
+      <p class="desc">
+        Neural Network Nexus is a event to showcase your skills and
+        understanding of Machine Learning and Data Science concepts where you
+        will show your abilities in solving real world problems by building AI
+        Bots
+      </p>
+      <a class="btn" target="_blank" href="/pages/events/aiml.html">View event</a>
+    </div>
+  </section>
+  <section id="chess" class="section">
+    <div class="left">
+      <span>03</span>
+      <p>Chess</p>
+    </div>
+    <div class="right">
+      <img src="../assets/images/events/chess.png" alt="" />
 
-        <div class="event-heading">
-          <h2>Hourglass 2.0</h2>
-          <svg viewBox="12.335 29.5 172.265 141">
+      <div class="event-heading">
+        <h2>Hourglass 3.0</h2>
+        <!-- <svg viewBox="12.335 29.5 172.265 141">
             <g>
               <path
                 d="M114.1 170.5c-30.2 0-57-19.2-66.7-47.8-.5-1.6.3-3.3 1.9-3.8 1.6-.5 3.3.3 3.8 1.9 8.9 26.1 33.4 43.7 61 43.7 35.5 0 64.5-28.9 64.5-64.5 0-35.5-28.9-64.5-64.5-64.5-27.6 0-52.1 17.6-61 43.7-.5 1.6-2.2 2.4-3.8 1.9-1.6-.5-2.4-2.2-1.9-3.8 9.7-28.6 36.5-47.8 66.7-47.8 38.9 0 70.5 31.6 70.5 70.5s-31.6 70.5-70.5 70.5z"
@@ -205,30 +286,28 @@
                 data-color="2"
               ></path>
             </g>
-          </svg>
-        </div>
-        <p class="desc">
-          Get set for an epic chess competition. Players of all levels can
-          flaunt their skills and compete with fellow enthusiasts. Join us
-          whether a novice or a pro to challenge yourself and improve your game.
-        </p>
-        <a class="btn" target="_blank" href="/pages/events/chess.html"
-          >View event</a
-        >
+          </svg> -->
       </div>
-    </section>
+      <p class="desc">
+        Get set for an epic chess competition. Players of all levels can
+        flaunt their skills and compete with fellow enthusiasts. Join us
+        whether a novice or a pro to challenge yourself and improve your game.
+      </p>
+      <a class="btn" target="_blank" href="/pages/events/chess.html">View event</a>
+    </div>
+  </section>
 
-    <section id="valorent" class="section">
-      <div class="left">
-        <span>04</span>
-        <p>Valorant</p>
-      </div>
-      <div class="right">
-        <img src="../assets/images/events/gaming.jpg" alt="" />
+  <section id="valorent" class="section">
+    <div class="left">
+      <span>04</span>
+      <p>Valorant</p>
+    </div>
+    <div class="right">
+      <img src="../assets/images/events/AimBot2.0.jpg" alt="" />
 
-        <div class="event-heading">
-          <h2>Aim Bot</h2>
-          <svg viewBox="12.335 29.5 172.265 141">
+      <div class="event-heading">
+        <h2>Aim Bot 2.0</h2>
+        <!-- <svg viewBox="12.335 29.5 172.265 141">
             <g>
               <path
                 d="M114.1 170.5c-30.2 0-57-19.2-66.7-47.8-.5-1.6.3-3.3 1.9-3.8 1.6-.5 3.3.3 3.8 1.9 8.9 26.1 33.4 43.7 61 43.7 35.5 0 64.5-28.9 64.5-64.5 0-35.5-28.9-64.5-64.5-64.5-27.6 0-52.1 17.6-61 43.7-.5 1.6-2.2 2.4-3.8 1.9-1.6-.5-2.4-2.2-1.9-3.8 9.7-28.6 36.5-47.8 66.7-47.8 38.9 0 70.5 31.6 70.5 70.5s-31.6 70.5-70.5 70.5z"
@@ -241,30 +320,28 @@
                 data-color="2"
               ></path>
             </g>
-          </svg>
-        </div>
-        <p class="desc">
-          Valorant Player? Here something for you. Compete with other Valo
-          players and prove yourself as the best Valo player. As a rookie player
-          you'll get chance to meet and play with one of the best players around
-          you.
-        </p>
-        <a class="btn" target="_blank" href="/pages/events/valo.html"
-          >View event</a
-        >
+          </svg> -->
       </div>
-    </section>
-    <section id="cp" class="section">
-      <div class="left">
-        <span>05</span>
-        <p>CP</p>
-      </div>
-      <div class="right">
-        <img src="../assets/images/events/cpg.jpg" alt="" />
+      <p class="desc">
+        Valorant Player? Here something for you. Compete with other Valo
+        players and prove yourself as the best Valo player. As a rookie player
+        you'll get chance to meet and play with one of the best players around
+        you.
+      </p>
+      <a class="btn" target="_blank" href="/pages/events/valo.html">View event</a>
+    </div>
+  </section>
+  <section id="cp" class="section">
+    <div class="left">
+      <span>05</span>
+      <p>CP</p>
+    </div>
+    <div class="right">
+      <img src="../assets/images/events/CircularCoding.jpg" alt="" />
 
-        <div class="event-heading">
-          <h2>Code Crusade</h2>
-          <svg viewBox="12.335 29.5 172.265 141">
+      <div class="event-heading">
+        <h2>Circular Coding</h2>
+        <!-- <svg viewBox="12.335 29.5 172.265 141">
             <g>
               <path
                 d="M114.1 170.5c-30.2 0-57-19.2-66.7-47.8-.5-1.6.3-3.3 1.9-3.8 1.6-.5 3.3.3 3.8 1.9 8.9 26.1 33.4 43.7 61 43.7 35.5 0 64.5-28.9 64.5-64.5 0-35.5-28.9-64.5-64.5-64.5-27.6 0-52.1 17.6-61 43.7-.5 1.6-2.2 2.4-3.8 1.9-1.6-.5-2.4-2.2-1.9-3.8 9.7-28.6 36.5-47.8 66.7-47.8 38.9 0 70.5 31.6 70.5 70.5s-31.6 70.5-70.5 70.5z"
@@ -277,31 +354,29 @@
                 data-color="2"
               ></path>
             </g>
-          </svg>
-        </div>
-        <p class="desc">
-          An exciting opportunity for programmers to showcase their technical
-          skills and creativity in the field of computer programming. Whether
-          you are an experienced coder or just starting our. We encourage you to
-          participate and challenge yourself to solve complex problems and
-          create innovative solutions.
-        </p>
-        <a class="btn" target="_blank" href="/pages/events/cp.html"
-          >View event</a
-        >
+          </svg> -->
       </div>
-    </section>
-    <section id="quiz" class="section">
-      <div class="left">
-        <span>06</span>
-        <p>Quiz</p>
-      </div>
-      <div class="right">
-        <img src="../assets/images/events/quiz.jpeg" alt="" />
+      <p class="desc">
+        Circular coding is an individual-focused competitive programming
+        event where participants, equating the total number of questions, take
+        turns tackling programming challenges within a specified duration.
+        This format emphasizes individual problem-solving skills, strategic
+        thinking, and swift algorithmic implementations.
+      </p>
+      <a class="btn" target="_blank" href="/pages/events/cp.html">View event</a>
+    </div>
+  </section>
+  <section id="quiz" class="section">
+    <div class="left">
+      <span>06</span>
+      <p>Quiz</p>
+    </div>
+    <div class="right">
+      <img src="../assets/images/events/QuizORama.jpg" alt="" />
 
-        <div class="event-heading">
-          <h2>Quiz-o-rama</h2>
-          <svg viewBox="12.335 29.5 172.265 141">
+      <div class="event-heading">
+        <h2>Quiz-o-rama 2.0</h2>
+        <!-- <svg viewBox="12.335 29.5 172.265 141">
             <g>
               <path
                 d="M114.1 170.5c-30.2 0-57-19.2-66.7-47.8-.5-1.6.3-3.3 1.9-3.8 1.6-.5 3.3.3 3.8 1.9 8.9 26.1 33.4 43.7 61 43.7 35.5 0 64.5-28.9 64.5-64.5 0-35.5-28.9-64.5-64.5-64.5-27.6 0-52.1 17.6-61 43.7-.5 1.6-2.2 2.4-3.8 1.9-1.6-.5-2.4-2.2-1.9-3.8 9.7-28.6 36.5-47.8 66.7-47.8 38.9 0 70.5 31.6 70.5 70.5s-31.6 70.5-70.5 70.5z"
@@ -314,30 +389,28 @@
                 data-color="2"
               ></path>
             </g>
-          </svg>
-        </div>
-        <p class="desc">
-          Quiz-o-rama is a test to your knowledge and a challenge to your
-          intellect. Compete against other trivia enthusiasts in a battle of
-          wits to see who will come out on top with a variety of categories and
-          questions. This is the ultimate test of your mental acuity.
-        </p>
-        <a class="btn" target="_blank" href="/pages/events/quiz.html"
-          >View event</a
-        >
+          </svg> -->
       </div>
-    </section>
-    <section id="uiux" class="section">
-      <div class="left">
-        <span>07</span>
-        <p>UI/UX</p>
-      </div>
-      <div class="right">
-        <img src="../assets/images/events/uiux.jpeg" alt="" />
+      <p class="desc">
+        Quiz-o-rama is a test to your knowledge and a challenge to your
+        intellect. Compete against other trivia enthusiasts in a battle of
+        wits to see who will come out on top with a variety of categories and
+        questions. This is the ultimate test of your mental acuity.
+      </p>
+      <a class="btn" target="_blank" href="/pages/events/quiz.html">View event</a>
+    </div>
+  </section>
+  <section id="codename" class="section">
+    <div class="left">
+      <span>07</span>
+      <p>Puzzle</p>
+    </div>
+    <div class="right">
+      <img src="../assets/images/events/Codename.jpg" alt="" />
 
-        <div class="event-heading">
-          <h2>UXplore</h2>
-          <svg viewBox="12.335 29.5 172.265 141">
+      <div class="event-heading">
+        <h2>Codename Quest</h2>
+        <!-- <svg viewBox="12.335 29.5 172.265 141">
             <g>
               <path
                 d="M114.1 170.5c-30.2 0-57-19.2-66.7-47.8-.5-1.6.3-3.3 1.9-3.8 1.6-.5 3.3.3 3.8 1.9 8.9 26.1 33.4 43.7 61 43.7 35.5 0 64.5-28.9 64.5-64.5 0-35.5-28.9-64.5-64.5-64.5-27.6 0-52.1 17.6-61 43.7-.5 1.6-2.2 2.4-3.8 1.9-1.6-.5-2.4-2.2-1.9-3.8 9.7-28.6 36.5-47.8 66.7-47.8 38.9 0 70.5 31.6 70.5 70.5s-31.6 70.5-70.5 70.5z"
@@ -350,29 +423,28 @@
                 data-color="2"
               ></path>
             </g>
-          </svg>
-        </div>
-        <p class="desc">
-          Come and participate in our UI/UX competition to demonstrate your
-          creativity in designing user-friendly interfaces. It doesn't matter if
-          you're a beginner or an experienced designer. Everyone is welcome to
-          join and share their unique approach to user experience design.
-        </p>
-        <a class="btn" target="_blank" href="/pages/events/uiux.html"
-          >View event</a
-        >
+          </svg> -->
       </div>
-    </section>
-    <!-- <section id="pitch" class="section">
+      <p class="desc">
+        Codenames is a popular and engaging word-based game that combines elements of
+        strategy, communication, and teamwork. In this game, players work in teams to uncover
+        secret words based on clues provided by a designated spymaster. The objective is to
+        correctly guess all the words assigned to your team while avoiding the words belonging
+        to the opposing team and the deadly assassin word.
+      </p>
+      <a class="btn" target="_blank" href="/pages/events/uiux.html">View event</a>
+    </div>
+  </section>
+  <!-- <section id="tressure" class="section">
       <div class="left">
         <span>08</span>
-        <p>Idea pitching</p>
+        <p>Tressure Hunt</p>
       </div>
       <div class="right">
-        <img src="../assets/images/events/pitching.jpg" alt="" />
+        <img src="../assets/images/events/CyberChase.jpg" alt="" />
 
         <div class="event-heading">
-          <h2>Resurgence</h2>
+          <h2>Cyber Chase</h2>
           <svg viewBox="12.335 29.5 172.265 141">
             <g>
               <path
@@ -397,63 +469,54 @@
         <button>View event</button>
       </div>
     </section> -->
-    <footer>
-      <div class="reach-us">
-        <h2 class="reach-us-heading">REACH US</h2>
-        <div class="reach-us-container">
-          <div class="address">
-            <h2 class="address-line">
-              MAHARAJA AGRASEN INSTITUTE OF TECHNOLOGY
-            </h2>
-            <h3 class="address-line">
-              Plot No 1 Rohini, Sector 22, PSP Area, Delhi, 110086
-            </h3>
-          </div>
-          <div class="contact-info">
-            <h2 class="address-line">Contact :</h2>
-            <h3 class="address-line">Kushagra : 9654302198</h3>
-            <h3 class="address-line">Karanjot : 9910522600</h3>
-            <h3 class="address-line">
-              Email :
-              <a
-                style="color: rgba(255, 255, 255, 0.647)"
-                href="mailto:iosdmait@gmail.com"
-                ><em>iosdmait@gmail.com</em></a
-              >
-            </h3>
-          </div>
+  <footer>
+    <div class="reach-us">
+      <h2 class="reach-us-heading">REACH US</h2>
+      <div class="reach-us-container">
+        <div class="address">
+          <h2 class="address-line">
+            MAHARAJA AGRASEN INSTITUTE OF TECHNOLOGY
+          </h2>
+          <h3 class="address-line">
+            Plot No 1 Rohini, Sector 22, PSP Area, Delhi, 110086
+          </h3>
         </div>
-        <div class="map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3498.994653666969!2d77.0639017149254!3d28.719705782383524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d068dbf44ecd7%3A0xc4ce5551f8ac8360!2sMaharaja%20Agrasen%20Institute%20Of%20Technology!5e0!3m2!1sen!2sin!4v1679765055157!5m2!1sen!2sin"
-            width="600"
-            height="300"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            class="map"
-          ></iframe>
+        <div class="contact-info">
+          <h2 class="address-line">Contact :</h2>
+          <h3 class="address-line">Jivesh : 9929902867</h3>
+          <h3 class="address-line">Jai : 8595717162</h3>
+          <h3 class="address-line">
+            Email :
+            <a style="color: rgba(255, 255, 255, 0.647)"
+              href="mailto:iosdmait@gmail.com"><em>iosdmait@gmail.com</em></a>
+          </h3>
         </div>
       </div>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3498.994653666969!2d77.0639017149254!3d28.719705782383524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d068dbf44ecd7%3A0xc4ce5551f8ac8360!2sMaharaja%20Agrasen%20Institute%20Of%20Technology!5e0!3m2!1sen!2sin!4v1679765055157!5m2!1sen!2sin"
+          width="600" height="300" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+      </div>
+    </div>
 
-      <div class="social">
-        <div class="icons">
-          <a href="https://www.facebook.com/iosdofficial/" target="_blank">
-            <i class="fa social-icon fa-brands fa-facebook"></i>
-          </a>
-          <a href="https://twitter.com/iosdofficial?lang=en" target="_blank">
+    <div class="social">
+      <div class="icons">
+        <a href="https://www.facebook.com/iosdofficial/" target="_blank">
+          <i class="fa social-icon fa-brands fa-facebook"></i>
+        </a>
+        <!--           <a href="https://twitter.com/iosdofficial?lang=en" target="_blank">
             <i class="fa social-icon fa-brands fa-twitter"></i>
-          </a>
-          <a href="https://linktr.ee/iosdmait" target="_blank">
-            <i class="fa social-icon fa-sharp fa-solid fa-hashtag"></i>
-          </a>
-          <a target="_blank" href="mailto:contact@iosd.tech" target="_blank">
-            <i class="social-icon fa fas fa-envelope"></i>
-          </a>
-        </div>
-        <p class="copyright">&copy; IOSD</p>
-        <!-- <div class="coc">
+          </a> -->
+        <a href="https://linktr.ee/iosdmait" target="_blank">
+          <i class="fa social-icon fa-sharp fa-solid fa-hashtag"></i>
+        </a>
+        <a target="_blank" href="mailto:contact@iosd.tech" target="_blank">
+          <i class="social-icon fa fas fa-envelope"></i>
+        </a>
+      </div>
+      <p class="copyright">&copy; IOSD</p>
+      <!-- <div class="coc">
           <p>
             <a
               href="https://docs.google.com/document/d/1ZG3Ie7jiUlMHnGCuckeb1jyW_wXFucwEKS6clpUEpWA/edit?usp=sharing"
@@ -464,10 +527,11 @@
           </p>
           <p class="copyright">&copy; IOSD</p>
         </div> -->
-      </div>
-    </footer>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <script src="../scripts/global.js"></script>
-    <script src="../scripts/events.js"></script>
-  </body>
+    </div>
+  </footer>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script src="../scripts/global.js"></script>
+  <script src="../scripts/events.js"></script>
+</body>
+
 </html>
