@@ -13,7 +13,7 @@ Impulse is the premier online platform for managing and showcasing college socie
 - **Responsive Design**: Access the platform seamlessly across desktops, tablets, and mobile devices.
 
 ## Impulse Event Website Preview 
-
+https://github.com/Paramhans-Singh/impulse23/assets/101575816/59b6ad82-52dc-47a6-9710-47425e9d4bb3
 
 ## Usage
 
